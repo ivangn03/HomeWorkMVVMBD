@@ -90,6 +90,11 @@
     </Compile>
     <Compile Include="Infrastracture\RelayCommand.cs" />
     <Compile Include="Moduls\MyModule.cs" />
+    <Compile Include="ShopDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShopDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
@@ -118,6 +123,17 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ShopDBDataSet.xsc">
+      <DependentUpon>ShopDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ShopDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShopDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShopDBDataSet.xss">
+      <DependentUpon>ShopDBDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
